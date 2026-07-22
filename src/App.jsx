@@ -1,7 +1,11 @@
-import SettingsFormV1 from './components/SettingsFormV1'
+import SettingsFormV2 from './components/SettingsFormV2'
 
 function App() {
-  return <SettingsFormV1 />
+  const handleSubmit = (data) => {
+    console.log('Validated data:', data);
+  };
+
+  return <SettingsFormV2 onSubmit={handleSubmit} />
 }
 
 export default App
